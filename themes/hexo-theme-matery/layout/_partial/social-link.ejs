@@ -1,23 +1,80 @@
-<% if (theme.socialLink.github) { %>
-    <a href="https://github.com/danygitgit" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+
+<div class="container row center-align col s12 m8 l8 social-link">
+    <!-- <a href="https://github.com/danygitgit" class="tooltipped" target="_blank" data-tooltip="GitHub"
+        data-position="top" data-delay="50" data-tooltip-id="ee9a890e-dab7-e157-6ef4-63ce33e72842">
         <i class="fa fa-github"></i>
-    </a>
-<% } %>
-
-<% if (theme.socialLink.email) { %>
-    <a href="mailto:<%= theme.socialLink.email %>" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    </a> -->
+    <!-- <a href="https://space.bilibili.com/7076447/#/" class="tooltipped" target="_blank" data-tooltip="BiliBili"
+        data-position="top" data-delay="50" data-tooltip-id="866993db-40a2-efda-d2b6-206ed133ce35">
+        <i class="fa fa-viadeo"></i>
+    </a> -->
+    <!-- <a href="https://www.jianshu.com/u/3d7dfd3e540f" class="tooltipped" target="_blank" data-tooltip="我的简书"
+        data-position="top" data-delay="50" data-tooltip-id="98f514cc-9a0e-4d7b-b757-497a571f0543">
+        <i class="fa fa-bookmark"></i>
+    </a> -->
+    <!-- <a href="https://www.zhihu.com/people/xu-qiang-69-64/activities" class="tooltipped" target="_blank"
+        data-tooltip="我的知乎" data-position="top" data-delay="50" data-tooltip-id="9ebf2365-c751-50e5-0cc4-7364368f3312">
+        <i class="fa fa-balance-scale"></i>
+    </a> -->
+    <!-- <a href="https://mblog.xq99.me/about/#!" class="tooltipped" data-tooltip="邮件:xq773939719@gmail.com"
+        data-position="top" data-delay="50" data-tooltip-id="3f995637-72e4-271b-15ec-fa9e09ac5e34">
         <i class="fa fa-envelope-open"></i>
-    </a>
-<% } %>
-
-<% if (theme.socialLink.qq) { %>
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=<%= theme.socialLink.qq %>" class="tooltipped" data-tooltip="QQ联系我: <%= theme.socialLink.qq %>" data-position="top" data-delay="50">
+    </a> -->
+    <!-- <a href="https://mblog.xq99.me/about/#!" class="tooltipped" data-tooltip="QQ:773939719" data-position="top"
+        data-delay="50" data-tooltip-id="468c2747-be7e-0631-751d-38e9166d26b5">
         <i class="fa fa-qq"></i>
+    </a> -->
+    <% if (theme.socialLink.github) { %>
+        <a href="https://github.com/danygitgit" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+            <i class="fa fa-github"></i>
+        </a>
+    <% } %>
+    
+    <a href="https://github.com/danygitgit" class="tooltipped" data-tooltip="微信:xq773939719" data-position="top"
+        data-delay="50" data-tooltip-id="dad2f9c0-5244-b790-2750-d6b9275759d9">
+        <i class="fa fa-wechat"></i>
     </a>
-<% } %>
+    <a href="https://juejin.im/user/5b1a3eb7f265da6e572b3ada" class="tooltipped" target="_blank" data-tooltip="掘金" data-position="top" data-delay="50" data-tooltip-id="9ebf2365-c751-50e5-0cc4-7364368f3312">
+        <i class="fa fa-balance-scale"></i>
+    </a>
 
-<% if (config.feed && config.feed.path == 'atom.xml') { %>
-    <a href="<%- url_for('/atom.xml') %>" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fa fa-rss"></i>
-    </a>
-<% } %>
+    <% if (theme.socialLink.email) { %>
+        <a href="mailto:<%= theme.socialLink.email %>" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+            <i class="fa fa-envelope-open"></i>
+        </a>
+    <% } %>
+    
+    <% if (theme.socialLink.qq) { %>
+        <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=<%= theme.socialLink.qq %>" class="tooltipped" data-tooltip="QQ联系我: <%= theme.socialLink.qq %>" data-position="top" data-delay="50">
+            <i class="fa fa-qq"></i>
+        </a>
+    <% } %>
+    
+    <% if (config.feed && config.feed.path == 'atom.xml') { %>
+        <a href="<%- url_for('/atom.xml') %>" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+            <i class="fa fa-rss"></i>
+        </a>
+    <% } %>
+    <!-- <a href="https://mblog.xq99.me/about/#!" class="tooltipped" data-tooltip="Twitter:xq773939719" data-position="top"
+        data-delay="50" data-tooltip-id="2bce542d-060b-8c83-0d2e-cb16001497ea">
+        <i class="fa fa-twitter"></i>
+    </a> -->
+    <!-- <a href="https://mblog.xq99.me/about/#!" class="tooltipped" data-tooltip="Tumblr:cleergo" data-position="top"
+        data-delay="50" data-tooltip-id="a359c463-f0a2-c467-0e49-34c08614e8b4">
+        <i class="fa fa-tumblr"></i>
+    </a> -->
+    <!-- <a href="https://mblog.xq99.me/about/#!" class="tooltipped" data-tooltip="Slack:xq773939719" data-position="top"
+        data-delay="50" data-tooltip-id="cf34b4af-b4ba-1866-a475-a7f664868c1d">
+        <i class="fa fa-slack"></i>
+    </a> -->
+    <!-- <a href="https://mblog.xq99.me/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS" data-position="top"
+        data-delay="50" data-tooltip-id="bf0046ef-855f-fd76-6115-ef4a0d8aa36c"><i class="fa fa-rss"></i>
+    </a> -->
+
+    <!-- <a href="https://github.com/blinkfox/hexo-theme-matery" class="tooltipped" target="_blank"
+        data-tooltip="基于Hexo+Matery创建" data-position="top" data-delay="50"
+        data-tooltip-id="093187cc-240f-351e-aeae-d98c23d12390">
+        <i class="fa fa-link"></i>
+    </a> -->
+
+</div>

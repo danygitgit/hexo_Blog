@@ -1240,8 +1240,8 @@ table tr:nth-child(2n), thead {
         left: 50%;
         margin-left: -20px;
         /* Force Hardware Acceleration in WebKit */
-        -webkit-transform: translateZ(0);
-        -webkit-backface-visibility: hidden;
+        /* -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden; */
     }
 
     .cssanimations .cd-timeline-img.is-hidden {

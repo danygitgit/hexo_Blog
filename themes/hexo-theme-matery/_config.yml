@@ -34,8 +34,22 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 我的梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  title: THE PERIOD
+  text: 这是一个最好的时代，也是一个最坏的时代；
+
+        这是一个智慧的年代，这是一个愚蠢的年代；
+
+        这是一个信任的时期，这是一个怀疑的时期；
+
+        这是一个光明的季节，这是一个黑暗的季节；
+
+        这是希望之春，这是失望之冬；
+
+        人们面前应有尽有，人们面前一无所有；
+
+        人们正踏上天堂之路，人们正走向地狱之门。
+
+        ——《双城记》狄更斯
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -86,16 +100,16 @@ indexbtn:
   enable: true
   name: Github
   icon: fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/danygitgit
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  qq: 123123123
-  github:
-  email: xxx@xx.xx
-
+  qq: 741790002
+  github: https://github.com/danygitgit
+  email: 741790002@qq.com
+  WeChat: 18453069667
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
 # 是否激活文章 TOC 功能，并配置TOC支持选中哪些标题类型，这是全局配置。
@@ -140,7 +154,7 @@ mathjax:
 # 文章字数统计、阅读时长、总字数统计
 # 激活前请确认你已经安装了 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
 wordCount:
-  enable: false
+  enable: true
   postWordCount: true
   min2read: true
   totalCount: true
@@ -222,6 +236,18 @@ myGallery:
     - /medias/featureimages/10.jpg
     - /medias/featureimages/11.jpg
     - /medias/featureimages/12.jpg
+    - /medias/featureimages/13.jpg
+    - /medias/featureimages/14.jpg
+    - /medias/featureimages/15.jpg
+    - /medias/featureimages/16.jpg
+    - /medias/featureimages/17.jpg
+    - /medias/featureimages/18.jpg
+    - /medias/featureimages/19.jpg
+    - /medias/featureimages/20.jpg
+    - /medias/featureimages/21.jpg
+    - /medias/featureimages/22.jpg
+    - /medias/featureimages/23.jpg
+    - /medias/featureimages/24.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -387,3 +413,14 @@ featureImages:
 reprint:
   enable: true # whether enable reprint section 是否启用“转载规则限定模块”
   default: cc_by
+
+# 使用到了 hexo-generator-feed 的 Hexo 插件来做 RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
