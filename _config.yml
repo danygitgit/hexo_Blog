@@ -130,4 +130,6 @@ live2d:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/danygitgit/danygitgit.github.io.git
+  branch: master
