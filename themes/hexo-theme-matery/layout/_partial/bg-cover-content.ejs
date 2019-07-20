@@ -5,7 +5,7 @@
                 <% if (config.subtitle && config.subtitle.length > 0) { %>
                     <%= config.subtitle %>
                 <% } else { %>
-                    subtitle
+                    豆包君
                 <% } %>
             </div>
 
@@ -13,7 +13,7 @@
                 <% if (config.description && config.description.length > 0) { %>
                     <%= config.description %>
                 <% } else { %>
-                    This is your root _config.yml 'description' value.
+                    In me the tiger sniffs the rose.
                 <% } %>
             </div>
         </div>
@@ -21,5 +21,6 @@
 </div>
 <script>
 // 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+// $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+$('.bg-cover').css('background-image', 'url(https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/bg-cover/' + Math.floor(Math.random() * 62 ) + '.jpg)');
 </script>
