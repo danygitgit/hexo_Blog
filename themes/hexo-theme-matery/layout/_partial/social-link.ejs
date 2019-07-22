@@ -48,13 +48,14 @@
         <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=<%= theme.socialLink.qq %>" class="tooltipped" data-tooltip="QQ联系我: <%= theme.socialLink.qq %>" data-position="top" data-delay="50">
             <i class="fa fa-qq"></i>
         </a>
+        
     <% } %>
     
-    <% if (config.feed && config.feed.path == 'atom.xml') { %>
+    <!-- <% if (config.feed && config.feed.path == 'atom.xml') { %>
         <a href="<%- url_for('/atom.xml') %>" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
             <i class="fa fa-rss"></i>
         </a>
-    <% } %>
+    <% } %> -->
     <!-- <a href="https://mblog.xq99.me/about/#!" class="tooltipped" data-tooltip="Twitter:xq773939719" data-position="top"
         data-delay="50" data-tooltip-id="2bce542d-060b-8c83-0d2e-cb16001497ea">
         <i class="fa fa-twitter"></i>
